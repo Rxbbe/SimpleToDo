@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: linear-gradient(180deg, #ff7e5f, #feb47b);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input container bovenaan gecentreerd */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+/* Layout van de twee lijsten */
+.main-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Task list en completed tasks */
+#list, #completedTasks {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+    color: #fff;
+}
+
+/* Titels */
+.app-container h1,
+#list h2,
+#completedTasks h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input field */
+.app-container input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Buttons */
+.app-container button,
+#clearTasksButton {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #ff7e5f;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 100%;
+}
+
+.app-container button:hover,
+#clearTasksButton:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+}
+
+/* Lijststijl */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #ff7e5f;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Checkbox voor taken */
+.complete-checkbox {
+    margin-right: 10px;
+    transform: scale(1.2);
+    accent-color: #ff7e5f;
+    cursor: pointer;
+}
